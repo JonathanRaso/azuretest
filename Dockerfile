@@ -8,6 +8,7 @@ COPY requirements.txt ./requirements.txt
 
 # Install all that is in the requirments.txt file.
 RUN pip install -r requirements.txt
+RUN cp config.toml ~/.streamlit/config.toml
 
 EXPOSE 8501
 
